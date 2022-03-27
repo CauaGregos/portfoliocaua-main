@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Cauã Nunes</title>
+    <link rel="stylesheet" href="view/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Ubuntu+Mono&family=Yaldevi:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+    <div id="foto">
+        <img src="img/Perfil.jpg" alt="">
+    </div>
+   
+    <div>
+        <h3 id="texto1">
+            <p id="enfase"><b>< Olá/></Ol></b>,</p> meu nome é Cauã Nunes Gregos, sou Dev Junior cursando meu técnico
+            ainda espero um dia chegar a Faculdade e poder mudar esse site novamente
+        </h3>
+    </div>
+        <div id="textos"><h1>
+            < Meus projetos/>
+        </h1></div>
+
+    <div id="java">
+        <img src="https://img.icons8.com/ios-glyphs/50/000000/java-coffee-cup-logo.png" />
+    </div>
+
+    <div id="texto2">
+        <h4 >
+            Fiz um projeto em java onde aprendi muito sobre servidores e sockets.
+            Foi passado para todos os alunos que no final do semestre precisaria
+            entregar um projeto de um jogo da forca que rodasse em rede somente com
+            com java.
+        </h4>
+    </div>
+    <div id= "texto3">
+
+        <div id="FivemImg">
+            <img src="img/fivem.png"/>
+        </div>
+        <h4 >
+            Desenvolvi algumas coisas para FiveM utilizando o .lua, gostei muito inclusive da parte de POO que é semelhante ao java e ao C#, que são linguagens
+            que eu quero me apronfundar ainda mais
+        </h4>
+    </div>
+    </div>
+    <div id = "experiencias">
+
+        <div id="titulo2"><h1>
+            < Tecnologias/>
+        </h1></div>
+
+        <div id="tech"><img src="img/Dashboard.png" alt=""></div>
+        
+        
+        </div>
+        
+
+    </div>
+
+
+    <script>
+        function rain() {
+            let amount = 40;
+            let body = document.querySelector('body');
+            let i = 0; 
+
+            while (i < amount) {
+                let drop = document.createElement('i');
+
+                let size = Math.random() * 5;
+                let posX = Math.floor(Math.random()*1366)
+                let delay = Math.random() * -20;
+                let duration = 7;
+                
+
+                drop.style.width = 0.2 + size+ 'px';
+                drop.style.left = posX + 'px'
+                drop.style.animationDelay = delay+'s';
+                drop.style.animationDuration = duration+'s';
+                body.appendChild(drop);
+                i++
+            }
+        }
+
+        rain();
+
+    </script> 
+      
+</body>
+
+</html>

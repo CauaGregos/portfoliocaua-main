@@ -1,0 +1,198 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  background: #1d1d27;
+  z-index: 0;
+  
+}
+
+#FivemImg img{
+  width: 60px;
+  left: 45%;
+  margin-top: 18%;
+  position: absolute;
+}
+
+#textos h1{
+  color:rgb(152, 93, 201);
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+#textos {
+  position: absolute;
+  display: block;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#texto1 {
+  position: absolute;
+  margin-top: 10vh;
+  text-align: justify;
+  margin-left: 8vh;
+  font-size: 18px;
+  color: white;
+  font-family: 'Kanit', sans-serif;
+  max-width: 30%;
+}
+
+#tech{
+  position: absolute;
+  margin-top:  64%;
+  margin-left: 29.5%;
+}
+
+#texto2 {
+  position: absolute;
+  margin-top: 60vh;
+  text-align: justify;
+  margin-left: 10vh;
+  font-size: 18px;
+  color: white;
+  font-family: 'Kanit', sans-serif;
+  max-width: 45%;
+}
+
+#texto3 {
+  position: absolute;
+  margin-top: 87vh;
+  text-align: justify;
+  margin-right: 10vh;
+  font-size: 18px;
+  color: white;
+  margin-left: 55%;
+  max-width: 45%;
+  font-family: 'Kanit', sans-serif;
+}
+
+#enfase {
+  font-size: 30px;
+  color: rgb(58, 148, 184);
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+#projetos {
+  margin-top: 30%;
+}
+
+#foto{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 110px;
+  position: absolute;
+  margin-top: -15vh;
+ 
+}
+
+#foto img{
+  width: 20vh;
+  height: 20vh;
+  border-radius: 110px;
+  transition: 1s;
+}
+
+#foto img:hover {
+  transform: scale(1.2);
+}
+
+#java{
+  top: 85%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+  position:absolute;
+}
+
+#java img {
+  
+  background-color: rgb(233, 61, 61);
+  border-radius: 18px;
+}
+
+/*Experiencias*/
+
+#titulo2{
+  position: absolute;
+  display: block;
+  text-align: center;
+  top: 120%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: rgb(76, 190, 86);
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+#card{
+  width: 15vw;
+  height: 40vh;
+  background: rgba(255, 255,255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-background-filter: 10px;
+  border-radius: 9px;
+  position: absolute;
+ 
+  top: 140%;
+  left: 10%;
+}
+
+/*Animações*/
+i {
+  position: absolute;
+  height: 4px;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#fff));
+  background: linear-gradient(transparent, #fff);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-animation: animate 5s linear infinite;
+          animation: animate 5s linear infinite;
+          z-index: -1;
+}
+
+i:nth-child(3n+1) {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#0ff));
+  background: linear-gradient(transparent, rgba(253, 253, 253, 0.705));
+}
+
+i:nth-child(3n+2) {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#0f0));
+  background: linear-gradient(transparent, rgba(255, 255, 255, 0.651));
+}
+
+i:nth-child(3n+3) {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#7027e6));
+  background: linear-gradient(transparent, #ffffffa8);
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  100% {
+    -webkit-transform: translateY(calc(100vh + 200px));
+            transform: translateY(calc(100vh + 200px));
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  100% {
+    -webkit-transform: translateY(calc(100vh + 200px));
+            transform: translateY(calc(100vh + 200px));
+  }
+}
+/*# sourceMappingURL=style.css.map */
